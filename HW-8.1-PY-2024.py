@@ -11,3 +11,6 @@ class Car:
         self.engine = engine_capacity
         self.color = color
         self.price = price
+
+    def __str__(self):
+        return (f"{self.manufacturer} {self.model} ({self.release}):\n Barva: {self.color}\n Motor: {self.engine} L\n Cena: {self.price} Kč")
