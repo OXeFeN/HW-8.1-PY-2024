@@ -14,3 +14,13 @@ class Car:
 
     def __str__(self):
         return (f"{self.manufacturer} {self.model} ({self.release}):\n Barva: {self.color}\n Motor: {self.engine} L\n Cena: {self.price} Kč")
+    
+    def new_car():
+        model = input("Insert model: ")
+        release = input("Insert year of release: ")
+        manufacturer = input("Insert manufacturer: ")
+        engine = input("Insert engine capacity (in liters): ")
+        color = input("Insert color: ")
+        price = input("Insert price: ")
+
+        return Car(model=model, years_of_release=release, manufacturer=manufacturer, engine_capacity=engine, color=color, price=price)
